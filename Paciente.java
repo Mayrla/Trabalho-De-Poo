@@ -17,4 +17,14 @@ public class Paciente{
 		this.idade=idade;
 		this.doencasEAlergia=doencasEAlergia;
 	}
+	
+	public void adicionarDiagnostico(String diagnostico){
+		historicoHospitalar.add(diagnostico);
+	}
+	
+	public void verTodosOsDiagnosticos(){
+		for(int i=0; i<historicoHospitalar.size();i++){
+			 System.out.println((i+1)+" - "+historicoHospitalar.get(i));
+		}
+	}
 }
