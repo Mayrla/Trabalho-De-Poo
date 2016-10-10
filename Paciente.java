@@ -1,6 +1,6 @@
 
 public class Paciente{
-	private static numDeEntradas;
+	private static int numDeEntradas;
 	private String nome;
 	private String sexo;
 	private int idade;
