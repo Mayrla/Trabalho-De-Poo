@@ -16,6 +16,8 @@
 		String DoencasCronicasouAlergias = scl.nextLine();
 		 Paciente p= new Paciente(nome,sexo,idade,DoencasCronicasouAlergias);
 		 paciente.add(p);
+		 System.out.println(p+"/npaciente adicionado com sucesso!!");
+		 
 	 }
 	 
 	 public void saida(){
@@ -23,7 +25,7 @@
 		 int num = sc.nextInt();
 		Paciente p= new Paciente(num);
 		 Paciente p2=paciente.remove(p);
-		 System.out.println(p2);
+		 System.out.println(p2+"/npaciente removido com sucesso!!");
 	 }
 	 
 	  public void situacaoDoPaciente(){
@@ -31,10 +33,10 @@
 		 int num = sc.nextInt();
 		Paciente p= new Paciente(num);
 		 Paciente p2=paciente.get(paciente.indexOf(p));
-		  
 		 System.out.println("Digite a situacao do paciente:");
-		 
-		  p2.adicionarDiagnostico(scl.nextLine());
+		 String situacao=scl.nextLine();
+		  p2.adicionarDiagnostico(situacao);
+		  System.out.println(p2+"/n"+situacao);
 	 }
  }
 		 
