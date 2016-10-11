@@ -22,6 +22,15 @@ public class Paciente{
 		historicoHospitalar.add(diagnostico);
 	}
 	
+	public int getNumero(){
+		return numDoPaciente;
+	}
+	
+	public boolean equals(Object o){
+		Paciente p= (Paciente)o;
+		return numDoPaciente==p.getNum;
+	}
+	
 	public void verTodosOsDiagnosticos(){
 		for(int i=0; i<historicoHospitalar.size();i++){
 			 System.out.println((i+1)+" - "+historicoHospitalar.get(i));
