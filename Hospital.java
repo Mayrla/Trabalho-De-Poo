@@ -12,6 +12,12 @@
 		 System.out.println("Digite o sexo:");
 		 String sexo = sc.next();
 		 System.out.println("Digite Doencas cronicas ou alergias:");
+		 
+		String DoencasCronicasouAlergias = scl.nextLine();
+		 Paciente p= new Paciente(nome,sexo,idade,DoencasCronicasouAlergias);
+		 paciente.add(p);
+		 
+		 
 	 }
  }
 		 
