@@ -1,12 +1,15 @@
 import java.util.Scanner;
 public class Principal{
 	public static void main(String args[]){
-		Scanner sc =new scanner(System.in);
-		System.out.println("Digite quantos usuarios seram cadastrados:");
+		menu();
+	}
+	public static void menu(){
+		System.out.println(
+			"[1]Entrada/n"+
+			"[2]saida/n"+
+			"[3]Situacao do paciente/n"+
+			"[4]Sair"
+		);
 		
-		for(int i=0;i<sc.nextInt();i++){
-			
-
-		}
 	}
 }
