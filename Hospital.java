@@ -16,8 +16,13 @@
 		String DoencasCronicasouAlergias = scl.nextLine();
 		 Paciente p= new Paciente(nome,sexo,idade,DoencasCronicasouAlergias);
 		 paciente.add(p);
-		 
-		 
+	 }
+	 
+	 public void saida(){
+		 System.out.println("Digite o numero:");
+		 int num = sc.nextInt();
+		Paciente p= new Paciente(num);
+		 paciente.remove(p);
 	 }
  }
 		 
