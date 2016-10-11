@@ -22,7 +22,19 @@
 		 System.out.println("Digite o numero:");
 		 int num = sc.nextInt();
 		Paciente p= new Paciente(num);
-		 paciente.remove(p);
+		 Paciente p2=paciente.remove(p);
+		 System.out.println(p2);
+	 }
+	 
+	  public void situacaoDoPaciente(){
+		 System.out.println("Digite o numero:");
+		 int num = sc.nextInt();
+		Paciente p= new Paciente(num);
+		 Paciente p2=paciente.get(paciente.indexOf(p));
+		  
+		 System.out.println("Digite a situacao do paciente:");
+		 
+		  p2.adicionarDiagnostico(scl.nextLine());
 	 }
  }
 		 
