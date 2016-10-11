@@ -36,4 +36,8 @@ public class Paciente{
 			 System.out.println((i+1)+" - "+historicoHospitalar.get(i));
 		}
 	}
+	
+	public String toString(){
+		return "Numero da entrada: "+numDoPaciente+"/n"+"Nome do paciente: "+nome;
+	}
 }
