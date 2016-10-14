@@ -33,10 +33,36 @@
 		 int num = sc.nextInt();
 		Paciente p= new Paciente(num);
 		 Paciente p2=paciente.get(paciente.indexOf(p));
-		 System.out.println("Digite a situacao do paciente:");
+		  menu(p2);
+		/* System.out.println("Digite a situacao do paciente:");
 		 String situacao=scl.nextLine();
 		  p2.adicionarDiagnostico(situacao);
-		  System.out.println(p2+"/n"+situacao);
+		  System.out.println(p2+"/n"+situacao);*/
+	 }
+	 
+	 public void menu(Paciente p){
+		 System.out.println(
+			 "1: Adicionar diagnostico /n"+
+			 "2: Ver todos os diagnostico /n"+
+			 "3: Voltar ao menu principal /n"
+		 	);
+		 acao(p);
+	 }
+	 
+	 public void acao(Paciente p){
+		 Scanner sc = new Scanner(System.in);
+		 swicth( sc.nextInt()){
+			 case 1:
+			 System.out.println("Digite a situacao do paciente:");
+			 String situacao=scl.nextLine();
+		  	 p.adicionarDiagnostico(situacao);
+		 	 System.out.println(p+"/n"+situacao);
+			 break;
+			case 2:p.verTodosOsDiagnosticos();break;
+			case 3: return;break;
+			
+			default:System.out.println("Opcao invalida");
+		}
 	 }
  }
 		 
